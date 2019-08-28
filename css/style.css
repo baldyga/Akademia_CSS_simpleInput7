@@ -1,0 +1,36 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+header {
+    color: #0066cc;
+    font-weight: 900;
+}
+h1 {
+    font-style: italic;
+    font-size: 16px;
+    color:#0066cc;
+    opacity: 0.6;
+}
+.customerInfo,
+.books  {
+    border: 2px solid gray;
+    margin-bottom: 10px;
+    width: 40%;
+}
+.customerInfo label {
+    display: block;
+}
+label, select {
+    padding: 5px;
+    margin-left: 20px;
+}
+input {
+    width: 200px;
+    padding: 2px;
+}
+input[type='submit'] {
+    width: auto;
+    cursor: pointer;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18629</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>A Simple Form</header>
+    <h1>Form Fudamentals</h1>
+    <form action="https://formspree.io/email@domain.tld" method="POST" autocomplete="on">
+        <fieldset class="customerInfo">
+            <legend>Custromer Info</legend>
+
+            <label for="name">Name:
+            <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required></label>
+
+            <label for="telephone">Telephone:
+            <input type="tel" name="telephone" id="telephone" placeholder="Pattern: 1-234-567-8910" required></label>
+
+            <label for="email">Email address:
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required multiple></label>
+        </fieldset>
+        <fieldset class="books">
+            <legend>Books</legend>
+            <select name="books" id="books">
+                <option value="book1">Book1</option>
+                <option value="book2">Book2</option>
+                <option value="book3">Book3</option>
+                <option value="book4">Book4</option>
+                <option value="book5">Book5</option>
+            </select>
+            <!-- Quantity (between 1 and 5) -->
+            <label for="quantity">Quantity (maximum 5):
+            <input type="number" name="quantity" id="quantity" min="1" max="5"></label> 
+        </fieldset>
+        <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+</html>
